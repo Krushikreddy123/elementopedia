@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Periodic Table</title>
+  <link rel="stylesheet" href="periodictable.css">
+</head>
+<body>
+  <div class="brand-header">
+    Elementopedia
+  </div>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="periodic-table.html">Periodic Table</a></li>
+      <li class="dropdown">
+        <a href="#">More</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">About</a></li>
+          <li><hr class="divider"></li>
+          <li class="dropdown-submenu">
+            <a href="#">Mode</a>
+            <ul class="dropdown-submenu-menu">
+              <li><a href="#" onclick="setMode('dark')">Dark</a></li>
+              <li><a href="#" onclick="setMode('light')">Light</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="periodic-table-container">
+    <h2 class="pt"><ul>MODERN PERIODIC TABLE</ul></h2>
+    <div class="periodic-table">
+      <!-- Period 1 -->
+      <div class="element alkali-metal" data-symbol="H">
+        <button>H</button>
+        <span class="number">1</span>
+        <span class="name">Hydrogen</span>
+      </div>
+      <div class="element alkali-metal" data-symbol="Li">
+        <button>Li</button>
+        <span class="number">3</span>
+        <span class="name">Lithium</span>
+      </div>
+      <div class="element alkali-metal" data-symbol="Na">
+        <button>Na</button>
+        <span class="number">11</span>
+        <span class="name">Sodium</span>
+      </div>
+      <div class="element alkali-metal" data-symbol="K">
+        <button>K</button>
+        <span class="number">19</span>
+        <span class="name">Potassium</span>
+      </div>
+      <div class="element alkali-metal" data-symbol="Rb">
+        <button>Rb</button>
+        <span class="number">37</span>
+        <span class="name">Rubidium</span>
+      </div>
+      <div class="element alkali-metal" data-symbol="Cs">
+        <button>Cs</button>
+        <span class="number">55</span>
+        <span class="name">Cesium</span>
+      </div>
+      <div class="element alkali-metal" data-symbol="Fr">
+        <button>Fr</button>
+        <span class="number">87</span>
+        <span class="name">Francium</span>
+      </div>
+      <div class="element alkaline-earth-metal" data-symbol="Be">
+        <button>Be</button>
+        <span class="number">4</span>
+        <span class="name">Beryllium</span>
+      </div>
+      <div class="element alkaline-earth-metal" data-symbol="Mg">
+        <button>Mg</button>
+        <span class="number">12</span>
+        <span class="name">Magnesium</span>
+      </div>
+      <div class="element alkaline-earth-metal" data-symbol="Ca">
+        <button>Ca</button>
+        <span class="number">20</span>
+        <span class="name">Calcium</span>
+      </div>
+      <div class="element alkaline-earth-metal" data-symbol="Sr">
+        <button>Sr</button>
+        <span class="number">38</span>
+        <span class="name">Strontium</span>
+      </div>
+      <div class="element alkaline-earth-metal" data-symbol="Ba">
+        <button>Ba</button>
+        <span class="number">56</span>
+        <span class="name">Barium</span>
+      </div>
+      <div class="element alkaline-earth-metal" data-symbol="Ra">
+        <button>Ra</button>
+        <span class="number">88</span>
+        <span class="name">Radium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Sc">
+        <button>Sc</button>
+        <span class="number">21</span>
+        <span class="name">Scandium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Ti">
+        <button>Ti</button>
+        <span class="number">22</span>
+        <span class="name">Titanium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="V">
+        <button>V</button>
+        <span class="number">23</span>
+        <span class="name">Vanadium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Cr">
+        <button>Cr</button>
+        <span class="number">24</span>
+        <span class="name">Chromium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Mn">
+        <button>Mn</button>
+        <span class="number">25</span>
+        <span class="name">Manganese</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Fe">
+        <button>Fe</button>
+        <span class="number">26</span>
+        <span class="name">Iron</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Co">
+        <button>Co</button>
+        <span class="number">27</span>
+        <span class="name">Cobalt</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Ni">
+        <button>Ni</button>
+        <span class="number">28</span>
+        <span class="name">Nickel</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Cu">
+        <button>Cu</button>
+        <span class="number">29</span>
+        <span class="name">Copper</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Zn">
+        <button>Zn</button>
+        <span class="number">30</span>
+        <span class="name">Zinc</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Y">
+        <button>Y</button>
+        <span class="number">39</span>
+        <span class="name">Yttrium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Zr">
+        <button>Zr</button>
+        <span class="number">40</span>
+        <span class="name">Zirconium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Nb">
+        <button>Nb</button>
+        <span class="number">41</span>
+        <span class="name">Niobium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Mo">
+        <button>Mo</button>
+        <span class="number">42</span>
+        <span class="name">Molybdenum</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Tc">
+        <button>Tc</button>
+        <span class="number">43</span>
+        <span class="name">Technetium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Ru">
+        <button>Ru</button>
+        <span class="number">44</span>
+        <span class="name">Ruthenium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Rh">
+        <button>Rh</button>
+        <span class="number">45</span>
+        <span class="name">Rhodium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Pd">
+        <button>Pd</button>
+        <span class="number">46</span>
+        <span class="name">Palladium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Ag">
+        <button>Ag</button>
+        <span class="number">47</span>
+        <span class="name">Silver</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Cd">
+        <button>Cd</button>
+        <span class="number">48</span>
+        <span class="name">Cadmium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Hf">
+        <button>Hf</button>
+        <span class="number">72</span>
+        <span class="name">Hafnium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Ta">
+        <button>Ta</button>
+        <span class="number">73</span>
+        <span class="name">Tantalum</span>
+      </div>
+      <div class="element transition-metal" data-symbol="W">
+        <button>W</button>
+        <span class="number">74</span>
+        <span class="name">Tungsten</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Re">
+        <button>Re</button>
+        <span class="number">75</span>
+        <span class="name">Rhenium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Os">
+        <button>Os</button>
+        <span class="number">76</span>
+        <span class="name">Osmium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Ir">
+        <button>Ir</button>
+        <span class="number">77</span>
+        <span class="name">Iridium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Pt">
+        <button>Pt</button>
+        <span class="number">78</span>
+        <span class="name">Platinum</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Au">
+        <button>Au</button>
+        <span class="number">79</span>
+        <span class="name">Gold</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Hg">
+        <button>Hg</button>
+        <span class="number">80</span>
+        <span class="name">Mercury</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Rf">
+        <button>Rf</button>
+        <span class="number">104</span>
+        <span class="name">Rutherfordium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Db">
+        <button>Db</button>
+        <span class="number">105</span>
+        <span class="name">Dubnium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Sg">
+        <button>Sg</button>
+        <span class="number">106</span>
+        <span class="name">Seaborgium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Bh">
+        <button>Bh</button>
+        <span class="number">107</span>
+        <span class="name">Bohrium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Hs">
+        <button>Hs</button>
+        <span class="number">108</span>
+        <span class="name">Hassium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Mt">
+        <button>Mt</button>
+        <span class="number">109</span>
+        <span class="name">Meitnerium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Ds">
+        <button>Ds</button>
+        <span class="number">110</span>
+        <span class="name">Darmstadtium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Rg">
+        <button>Rg</button>
+        <span class="number">111</span>
+        <span class="name">Roentgenium</span>
+      </div>
+      <div class="element transition-metal" data-symbol="Cn">
+        <button>Cn</button>
+        <span class="number">112</span>
+        <span class="name">Copernicium</span>
+      </div>
+      <div class="element basic-metal" data-symbol="Al">
+        <button>Al</button>
+        <span class="number">13</span>
+        <span class="name">Aluminum</span>
+      </div>
+      <div class="element basic-metal" data-symbol="Ga">
+        <button>Ga</button>
+        <span class="number">31</span>
+        <span class="name">Gallium</span>
+      </div>
+      <div class="element basic-metal" data-symbol="In">
+        <button>In</button>
+        <span class="number">49</span>
+        <span class="name">Indium</span>
+      </div>
+      <div class="element basic-metal" data-symbol="Sn">
+        <button>Sn</button>
+        <span class="number">50</span>
+        <span class="name">Tin</span>
+      </div>
+      <div class="element basic-metal" data-symbol="Tl">
+        <button>Tl</button>
+        <span class="number">81</span>
+        <span class="name">Thallium</span>
+      </div>
+      <div class="element basic-metal" data-symbol="Pb">
+        <button>Pb</button>
+        <span class="number">82</span>
+        <span class="name">Lead</span>
+      </div>
+      <div class="element basic-metal" data-symbol="Bi">
+        <button>Bi</button>
+        <span class="number">83</span>
+        <span class="name">Bismuth</span>
+      </div>
+      <div class="element metalloid" data-symbol="B">
+        <button>B</button>
+        <span class="number">5</span>
+        <span class="name">Boron</span>
+      </div>
+      <div class="element metalloid" data-symbol="Si">
+        <button>Si</button>
+        <span class="number">14</span>
+        <span class="name">Silicon</span>
+      </div>
+      <div class="element metalloid" data-symbol="Ge">
+        <button>Ge</button>
+        <span class="number">32</span>
+        <span class="name">Germanium</span>
+      </div>
+      <div class="element metalloid" data-symbol="As">
+        <button>As</button>
+        <span class="number">33</span>
+        <span class="name">Arsenic</span>
+      </div>
+      <div class="element metalloid" data-symbol="Sb">
+        <button>Sb</button>
+        <span class="number">51</span>
+        <span class="name">Antimony</span>
+      </div>
+      <div class="element metalloid" data-symbol="Te">
+        <button>Te</button>
+        <span class="number">52</span>
+        <span class="name">Tellurium</span>
+      </div>
+      <div class="element metalloid" data-symbol="Po">
+        <button>Po</button>
+        <span class="number">84</span>
+        <span class="name">Polonium</span>
+      </div>
+      <div class="element nonmetal" data-symbol="C">
+        <button>C</button>
+        <span class="number">6</span>
+        <span class="name">Carbon</span>
+      </div>
+      <div class="element nonmetal" data-symbol="N">
+        <button>N</button>
+        <span class="number">7</span>
+        <span class="name">Nitrogen</span>
+      </div>
+      <div class="element nonmetal" data-symbol="O">
+        <button>O</button>
+        <span class="number">8</span>
+        <span class="name">Oxygen</span>
+      </div>
+      <div class="element nonmetal" data-symbol="P">
+        <button>P</button>
+        <span class="number">15</span>
+        <span class="name">Phosphorus</span>
+      </div>
+      <div class="element nonmetal" data-symbol="S">
+        <button>S</button>
+        <span class="number">16</span>
+        <span class="name">Sulfur</span>
+      </div>
+      <div class="element nonmetal" data-symbol="Se">
+        <button>Se</button>
+        <span class="number">34</span>
+        <span class="name">Selenium</span>
+      </div>
+      <div class="element halogen" data-symbol="F">
+        <button>F</button>
+        <span class="number">9</span>
+        <span class="name">Fluorine</span>
+      </div>
+      <div class="element halogen" data-symbol="Cl">
+        <button>Cl</button>
+        <span class="number">17</span>
+        <span class="name">Chlorine</span>
+      </div>
+      <div class="element halogen" data-symbol="Br">
+        <button>Br</button>
+        <span class="number">35</span>
+        <span class="name">Bromine</span>
+      </div>
+      <div class="element halogen" data-symbol="I">
+        <button>I</button>
+        <span class="number">53</span>
+        <span class="name">Iodine</span>
+      </div>
+      <div class="element halogen" data-symbol="At">
+        <button>At</button>
+        <span class="number">85</span>
+        <span class="name">Astatine</span>
+      </div>
+      <div class="element noble-gas" data-symbol="He">
+        <button>He</button>
+        <span class="number">2</span>
+        <span class="name">Helium</span>
+      </div>
+      <div class="element noble-gas" data-symbol="Ne">
+        <button>Ne</button>
+        <span class="number">10</span>
+        <span class="name">Neon</span>
+      </div>
+      <div class="element noble-gas" data-symbol="Ar">
+        <button>Ar</button>
+        <span class="number">18</span>
+        <span class="name">Argon</span>
+      </div>
+      <div class="element noble-gas" data-symbol="Kr">
+        <button>Kr</button>
+        <span class="number">36</span>
+        <span class="name">Krypton</span>
+      </div>
+      <div class="element noble-gas" data-symbol="Xe">
+        <button>Xe</button>
+        <span class="number">54</span>
+        <span class="name">Xenon</span>
+      </div>
+      <div class="element noble-gas" data-symbol="Rn">
+        <button>Rn</button>
+        <span class="number">86</span>
+        <span class="name">Radon</span>
+      </div>
+      <div class="element lanthanide" data-symbol="La">
+        <button>La</button>
+        <span class="number">57</span>
+        <span class="name">Lanthanum</span>
+      </div>
+      <div class="element lanthanide" data-symbol="Ce">
+        <button>Ce</button>
+        <span class="number">58</span>
+        <span class="name">Cerium</span>
+      </div>
+      <div class="element lanthanide" data-symbol="Pr">
+        <button>Pr</button>
+        <span class="number">59</span>
+        <span class="name">Praseodymium</span>
+      </div>
+      <div class="element lanthanide" data-symbol="Nd">
+        <button>Nd</button>
+        <span class="number">60</span>
+        <span class="name">Neodymium</span>
+      </div>
+      <div class="element lanthanide" data-symbol="Pm">
+        <button>Pm</button>
+        <span class="number">61</span>
+        <span class="name">Promethium</span>
+      </div>
+      <div class="element lanthanide" data-symbol="Sm">
+        <button>Sm</button>
+        <span class="number">62</span>
+        <span class="name">Samarium</span>
+      </div>
+      <div class="element lanthanide" data-symbol="Eu">
+        <button>Eu</button>
+        <span class="number">63</span>
+        <span class="name">Europium</span>
+      </div>
+      <div class="element lanthanide" data-symbol="Gd">
+        <button>Gd</button>
+        <span class="number">64</span>
+        <span class="name">Gadolinium</span>
+      </div>
+      <div class="element lanthanide" data-symbol="Tb">
+        <button>Tb</button>
+        <span class="number">65</span>
+        <span class="name">Terbium</span>
+      </div>
+      <div class="element lanthanide" data-symbol="Dy">
+        <button>Dy</button>
+        <span class="number">66</span>
+        <span class="name">Dysprosium</span>
+      </div>
+      <div class="element lanthanide" data-symbol="Ho">
+        <button>Ho</button>
+        <span class="number">67</span>
+        <span class="name">Holmium</span>
+      </div>
+      <div class="element lanthanide" data-symbol="Er">
+        <button>Er</button>
+        <span class="number">68</span>
+        <span class="name">Erbium</span>
+      </div>
+      <div class="element lanthanide" data-symbol="Tm">
+        <button>Tm</button>
+        <span class="number">69</span>
+        <span class="name">Thulium</span>
+      </div>
+      <div class="element lanthanide" data-symbol="Yb">
+        <button>Yb</button>
+        <span class="number">70</span>
+        <span class="name">Ytterbium</span>
+      </div>
+      <div class="element lanthanide" data-symbol="Lu">
+        <button>Lu</button>
+        <span class="number">71</span>
+        <span class="name">Lutetium</span>
+      </div>
+      <div class="element actinide" data-symbol="Ac">
+        <button>Ac</button>
+        <span class="number">89</span>
+        <span class="name">Actinium</span>
+      </div>
+      <div class="element actinide" data-symbol="Th">
+        <button>Th</button>
+        <span class="number">90</span>
+        <span class="name">Thorium</span>
+      </div>
+      <div class="element actinide" data-symbol="Pa">
+        <button>Pa</button>
+        <span class="number">91</span>
+        <span class="name">Protactinium</span>
+      </div>
+      <div class="element actinide" data-symbol="U">
+        <button>U</button>
+        <span class="number">92</span>
+        <span class="name">Uranium</span>
+      </div>
+      <div class="element actinide" data-symbol="Np">
+        <button>Np</button>
+        <span class="number">93</span>
+        <span class="name">Neptunium</span>
+      </div>
+      <div class="element actinide" data-symbol="Pu">
+        <button>Pu</button>
+        <span class="number">94</span>
+        <span class="name">Plutonium</span>
+      </div>
+      <div class="element actinide" data-symbol="Am">
+        <button>Am</button>
+        <span class="number">95</span>
+        <span class="name">Americium</span>
+      </div>
+      <div class="element actinide" data-symbol="Cm">
+        <button>Cm</button>
+        <span class="number">96</span>
+        <span class="name">Curium</span>
+      </div>
+      <div class="element actinide" data-symbol="Bk">
+        <button>Bk</button>
+        <span class="number">97</span>
+        <span class="name">Berkelium</span>
+      </div>
+      <div class="element actinide" data-symbol="Cf">
+        <button>Cf</button>
+        <span class="number">98</span>
+        <span class="name">Californium</span>
+      </div>
+      <div class="element actinide" data-symbol="Es">
+        <button>Es</button>
+        <span class="number">99</span>
+        <span class="name">Einsteinium</span>
+      </div>
+      <div class="element actinide" data-symbol="Fm">
+        <button>Fm</button>
+        <span class="number">100</span>
+        <span class="name">Fermium</span>
+      </div>
+      <div class="element actinide" data-symbol="Md">
+        <button>Md</button>
+        <span class="number">101</span>
+        <span class="name">Mendelevium</span>
+      </div>
+      <div class="element actinide" data-symbol="No">
+        <button>No</button>
+        <span class="number">102</span>
+        <span class="name">Nobelium</span>
+      </div>
+      <div class="element actinide" data-symbol="Lr">
+        <button>Lr</button>
+        <span class="number">103</span>
+        <span class="name">Lawrencium</span>
+      </div>
+      <div class="element unknown" data-symbol="Nh">
+        <button>Nh</button>
+        <span class="number">113</span>
+        <span class="name">Nihonium</span>
+      </div>
+      <div class="element unknown" data-symbol="Fl">
+        <button>Fl</button>
+        <span class="number">114</span>
+        <span class="name">Flerovium</span>
+      </div>
+      <div class="element unknown" data-symbol="Mc">
+        <button>Mc</button>
+        <span class="number">115</span>
+        <span class="name">Moscovium</span>
+      </div>
+      <div class="element unknown" data-symbol="Lv">
+        <button>Lv</button>
+        <span class="number">116</span>
+        <span class="name">Livermorium</span>
+      </div>
+      <div class="element unknown" data-symbol="Ts">
+        <button>Ts</button>
+        <span class="number">117</span>
+        <span class="name">Tennessine</span>
+      </div>
+      <div class="element unknown" data-symbol="Og">
+        <button>Og</button>
+        <span class="number">118</span>
+        <span class="name">Oganesson</span>
+      </div>
+      <footer class="site-footer">
+        <p>&copy; 2025 Elementopedia. All rights reserved.</p>
+      </footer>
+      <script>
+        function setMode(mode) {
+          if (mode === 'dark') {
+            document.body.style.background=" #111827";
+          } else if (mode === 'light') {
+            document.body.style.background="white";
+          }
+        }
+      </script>
+
+</html>   

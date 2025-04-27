@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elementopedia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="brand-header">
+    Elementopedia
+  </div>
+  
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="periodic-table.html" target="_blank">Periodic Table</a></li>
+      <li class="dropdown">
+        <a href="#">More</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">About</a></li>
+          <li><hr class="divider"></li>
+          <li class="dropdown-submenu">
+            <a href="#">Mode</a>
+            <ul class="dropdown-submenu-menu">
+              <li><a href="#" onclick="setMode('dark')">Dark</a></li>
+              <li><a href="#" onclick="setMode('light')">Light</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Search Bar -->
+  <div class="search-bar-container">
+    <div class="search-container">
+      <input id="search-input" type="text" placeholder="Enter Element name or Atom Number or Atomic Mass......" class="search-input" />
+      <button id="search-button" class="search-button">Search</button>
+    </div>
+
+    <!-- Result Container for displaying search results -->
+    <div id="result-container" class="result-container"></div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Elementopedia. All rights reserved.</p>
+  </footer>
+
+  <!-- Include script.js -->
+  <script src="script.js"></script>
+</body>
+</html>
